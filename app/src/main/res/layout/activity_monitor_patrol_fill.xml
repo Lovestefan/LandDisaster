@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightpic_bg="@drawable/toolbar_tel"
+        app:show_leftback="true"
+        app:show_leftpic="true"
+        app:show_rightpic="true"
+        app:title_text="定量监测" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_pkiaaname"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="灾害点名称"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_pkiaaname"
+                    android:gravity="center"
+                    android:text="："
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_fill_pkiaaname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_pkiaaname"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_name"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="监测点名称"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_name"
+                    android:gravity="center"
+                    android:text="："
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_fill_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_name"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_actualdata"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="地裂(毫米)"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_actualdata"
+                    android:gravity="center"
+                    android:text="："
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <EditText
+                    android:id="@+id/tv_monitor_patrol_fill_actualdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_actualdata"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_monitortime"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="发生日期"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_monitortime"
+                    android:gravity="center"
+                    android:text="："
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_fill_monitortime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv_monitor_patrol_monitortime"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/divider_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_note"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="文字备注"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_monitor_patrol_note"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_report_additem"
+                android:gravity="left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_big" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/tv_monitor_patrol_situation"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="最新情况"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop" />
+
+
+                <ImageView
+                    android:id="@+id/iv_file_delete"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/report_file_delete"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_macro_patrol_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/get_location" />
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="经度："
+                android:textSize="@dimen/text_size_normal" />
+
+            <TextView
+                android:id="@+id/tv_latitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="纬度："
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_monitor_patrol_save"
+                style="@style/MySubmitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/btn_monitor_patrol_upload"
+                style="@style/MySubmitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上传" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

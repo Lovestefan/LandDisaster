@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_leftback="true"
+        app:show_leftpic="true"
+        app:rightpic_bg="@drawable/toolbar_tel"
+        app:show_rightpic="true"
+        app:title_text="已上报巡查数据" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider_color"
+                android:padding="10dp"
+                android:text="基础"
+                android:textSize="@dimen/text_size_small" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_macro_monitro_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider_color"
+                android:padding="10dp"
+                android:text="备注信息"
+                android:textSize="@dimen/text_size_small" />
+
+            <EditText
+                android:id="@+id/edit_macro_patrol_note"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_report_additem"
+                android:gravity="left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_biger" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider_color"
+                android:padding="10dp"
+                android:text="宏观现象"
+                android:textSize="@dimen/text_size_small" />
+
+            <EditText
+                android:id="@+id/edit_macro_patrol_macroappear"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape_report_additem"
+                android:gravity="left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_biger" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider_color"
+                android:padding="10dp"
+                android:text="图片"
+                android:textSize="@dimen/text_size_small" />
+
+            <FrameLayout
+                android:id="@+id/fm_add_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_macro_monitro_details"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="地灾编号"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_macro_monitro_details"
+            android:gravity="center"
+            android:text="："
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_macro_monitro_details"
+            android:layout_margin="15dp"
+            android:background="@drawable/shape_report_additem"
+            android:gravity="left"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+
+
+</LinearLayout>

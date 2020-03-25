@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/shape_report_func"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_report_func_bg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/green" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_report_func_bg"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_report_func_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="name"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_report_func_num"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/shape_xapp_num"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            android:translationZ="2dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

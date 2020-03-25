@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_home2"
+            android:padding="10dp"
+            android:src="@drawable/icon_home_dlyj" />
+
+        <ImageView
+            android:id="@+id/iv_readed"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/normal_icon_2"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center|left"
+            android:singleLine="false"
+            android:text="关于XXX"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center|left"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="2019-05-24 11时"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/linen" />
+</RelativeLayout>

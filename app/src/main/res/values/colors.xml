@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5973c8</color>
+    <color name="colorPrimaryDark">#5973c8</color>
+    <color name="colorAccent">#5973c8</color>
+
+    <color name="text_color_drak">#333333</color>
+    <color name="text_color_normal">#666666</color>
+    <color name="text_color_light">#999999</color>
+
+    <color name="red_color_normal">#E7492E</color>
+    <color name="divider_color">#cccccc</color>
+
+    <color name="lengend_trans">#50ffffff</color>
+
+
+    <color name="level_1">#f7433a</color>
+    <color name="level_2">#f77f3a</color>
+    <color name="level_3">#f7d13a</color>
+    <color name="level_4">#d1f73a</color>
+    <color name="level_5">#8cf73a</color>
+    <color name="level_6">#f833ec05</color>
+</resources>

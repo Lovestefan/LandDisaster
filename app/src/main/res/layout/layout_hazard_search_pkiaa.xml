@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/select_report_item"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_pkiaa_searchTxet"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入关键字搜索"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <ImageView
+            android:id="@+id/iv_pkiaa_searchBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/search_black"/>
+    </LinearLayout>
+
+    <com.zx.zxutils.views.SwipeRecylerView.ZXSwipeRecyler
+        android:id="@+id/sr_pkiaa_searchList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    </com.zx.zxutils.views.SwipeRecylerView.ZXSwipeRecyler>
+
+    <TextView
+        android:id="@+id/tv_pkiaa_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_normal"
+        android:layout_gravity="right"
+        android:padding="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_leftback="true"
+        app:rightpic_bg="@drawable/toolbar_tel"
+        app:show_rightpic="true"
+        app:show_leftpic="true"
+        app:title_text="宏观观测"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_monitor_patrol_fill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollMode="never"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/divider_color"
+                    android:padding="10dp"
+                    android:text="文字备注"/>
+
+                <EditText
+                    android:id="@+id/et_macro_patrol_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_report_additem"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_big"/>
+
+                <FrameLayout
+                    android:id="@+id/fm_add_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_macro_patrol_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/get_location"/>
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="经度："
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_latitude"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="纬度："
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_macro_patrol_save"
+                style="@style/MySubmitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存"/>
+
+            <Button
+                android:id="@+id/btn_macro_patrol_upload"
+                style="@style/MySubmitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上传"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

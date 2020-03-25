@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mapBtn_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:alpha="@dimen/map_btn_icon_alpha"
+        android:overScrollMode="never"/>
+
+    <LinearLayout
+        android:id="@+id/ll_mapBtn_resetscale"
+        android:layout_width="@dimen/map_btn_width"
+        android:layout_height="@dimen/map_btn_width"
+        android:layout_above="@id/ll_mapBtn_location"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="@dimen/map_btn_icon_alpha"
+        android:background="@drawable/shape_map_btn"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/map_btn_icon_width"
+            android:layout_height="@dimen/map_btn_icon_width"
+            android:layout_gravity="center"
+            android:background="@drawable/map_btn_resetscale" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mapBtn_location"
+        android:layout_width="@dimen/map_btn_width"
+        android:layout_height="@dimen/map_btn_width"
+        android:layout_above="@+id/fl_downLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:alpha="@dimen/map_btn_icon_alpha"
+        android:background="@drawable/shape_map_btn"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/map_btn_icon_width"
+            android:layout_height="@dimen/map_btn_icon_width"
+            android:layout_gravity="center"
+            android:background="@drawable/map_btn_location" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rain_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_biger"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_rain_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rain_info"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tuceng_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rain_times"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_biger"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tuceng_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tuceng_info"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone" />
+
+    <com.zx.landdisaster.module.main.func.view.MeasureView
+        android:id="@+id/measure_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rain_times">
+
+    </com.zx.landdisaster.module.main.func.view.MeasureView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_map_legend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_downLayout"
+        android:layout_margin="5dp"
+        android:layout_marginRight="10dp"
+        android:alpha="0.8"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_map_legend_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="查看列表"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_small" />
+
+                <TextView
+                    android:id="@+id/tv_map_legend_list_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="展开"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_small"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_map_legend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_map_tucengAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_map_rainalpha"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_tcName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图层透明度:"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/sb_map_tucengAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="255" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_map_rainalpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_downLayout"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雨量透明度:"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/sb_map_rainalpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="255" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_downLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <View
+            android:id="@+id/downLayoutView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.4"
+            android:background="@color/black"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_btn_timeList"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:overScrollMode="never"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+</RelativeLayout>

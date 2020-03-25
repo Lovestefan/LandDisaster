@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_selectFile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="附件上传"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_selectFile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_report_item"
+            android:drawableLeft="@drawable/report_add_file"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="点击选择附件"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fileList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

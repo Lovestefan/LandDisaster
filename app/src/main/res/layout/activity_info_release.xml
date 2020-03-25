@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="信息发布" />
+
+    <com.zx.zxutils.views.TabViewPager.ZXTabViewPager
+        android:id="@+id/tvp_info_release"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

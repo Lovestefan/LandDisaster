@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="坐标查看">
+
+    </com.zx.landdisaster.base.other.ToolBarView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fm_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_btn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

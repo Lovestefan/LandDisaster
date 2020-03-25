@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">安全调度</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="toolbar_tel_string">67682950</string>
+
+    <string name="add_weekwork_hint">1.巡查情况；\n2.监测工作情况；\n3.宣传培训情况；\n4.演练情况等</string>
+
+    <string name="add_weekwork_xzmc">乡镇名称&#8195;</string>
+    <string name="add_weekwork_zbsj">周报时间&#8195;</string>
+
+    <string name="add_patrol_jd">巡查阶段&#8195;</string>
+    <string name="add_patrol_nr">巡查内容&#8195;</string>
+    <string name="add_weekwork_pqfzr">片区负责人</string>
+</resources>

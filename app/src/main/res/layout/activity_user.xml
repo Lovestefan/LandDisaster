@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="账户">
+    </com.zx.landdisaster.base.other.ToolBarView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_user_headicon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_user_accunt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_biger"/>
+
+            <TextView
+                android:id="@+id/tv_user_tel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_user_dept"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/light_gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_user_func"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="日报审核" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/downLayout"
+        android:layout_below="@+id/topLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:text="上报人"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:text="上报时间"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|left"
+                android:text="日报内容"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/select_report_item"
+                android:gravity="top|left"
+                android:minHeight="100dp"
+                android:padding="5dp"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/linen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center|left"
+                android:text="审核意见"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_big" />
+
+            <EditText
+                android:id="@+id/tvAuditopinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/select_report_item"
+                android:gravity="top|left"
+                android:hint="请填写您的审核意见..."
+                android:minHeight="100dp"
+                android:padding="5dp"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:id="@+id/auditTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|left"
+                    android:text="审核时间"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <TextView
+                    android:id="@+id/tvAuditTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fm_add_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/downLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pass"
+            style="@style/MyPassButton"
+            android:layout_weight="1"
+            android:text="通过" />
+
+        <Button
+            android:id="@+id/btn_noPass"
+            style="@style/MyCancelButton"
+            android:layout_weight="1"
+            android:text="驳回" />
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/MyStopButton"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:text="终止" />
+    </LinearLayout>
+</RelativeLayout>

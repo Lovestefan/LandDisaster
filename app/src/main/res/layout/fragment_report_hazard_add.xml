@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_add1_reviewopinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="50dp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="灾险情名称"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add1_hazardName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:maxLength="100"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="发生时间"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_add1_happenTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:drawableRight="@drawable/report_add_calender"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="灾险情类型"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_add1_hazardType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_add1_hazradType1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="灾情" />
+
+                        <RadioButton
+                            android:id="@+id/rb_add1_hazradType2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="险情" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="是否库区"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_add1_isArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_add1_isAreaYes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_weight="1"
+                            android:text="是" />
+
+                        <RadioButton
+                            android:id="@+id/rb_add1_isAreaNo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="否" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="灾害类型"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_add1_disasterType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item">
+
+                        <com.zx.zxutils.views.ZXSpinner
+                            android:id="@+id/sp_add1_disasterType"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="@dimen/text_size_normal" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="规    模"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_add1_scaleLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item">
+
+                        <com.zx.zxutils.views.ZXSpinner
+                            android:id="@+id/sp_add1_scaleLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="@dimen/text_size_normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="方    量"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_add1_disvolume"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/select_report_item"
+                            android:gravity="center_vertical"
+                            android:inputType="numberDecimal"
+                            android:maxLength="12"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:text="立方米"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="@dimen/text_size_normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="区    县"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_add1_areacode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="经纬度"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add1_longitude"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:hint="经度"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add1_latitude"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:hint="纬度"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:maxLength="12"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <ImageView
+                        android:id="@+id/iv_add1_location"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/report_add_location" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="详细地址"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add1_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:maxLength="255"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="隐患点类型"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_add1_hiddenType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_add1_hiddenType1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_weight="1"
+                            android:text="新增" />
+
+                        <RadioButton
+                            android:id="@+id/rb_add1_hiddenType2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="已有" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_add2_pkiaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="隐患点编号"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_pkiaa"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:hint="请输入或选择隐患点编号"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_add2_pkiaaSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="搜索"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_normal"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="威胁对象"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_treatObject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:hint="受威胁人、房屋、道路、桥梁"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="威胁人数"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_treatNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="撤离人数"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_leaveNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add2_injuredNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="受伤人数"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_injureNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add2_dieNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="死亡人数"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_dieNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add2_missingNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="失踪人数"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_missingNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_add2_econmicLoss"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="直接经济损失"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_add2_economicLoss"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/select_report_item"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="@dimen/text_size_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:text="万元"
+                            android:textColor="@color/text_color_light"
+                            android:textSize="@dimen/text_size_normal" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="诱    因"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_add1_cause"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item">
+
+                        <TextView
+                            android:id="@+id/tv_add2_cause"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/select_report_item"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="点击选择诱因"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color_normal"
+                            android:textSize="@dimen/text_size_normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add2_causeNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="诱因备注"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_causeNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:hint="填写其它诱因"
+                        android:maxLength="200"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="已开展处置措施"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_dealidea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:maxLength="200"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/red_color_normal"
+                        android:textSize="@dimen/text_size_big" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="下一步工作安排"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <EditText
+                        android:id="@+id/et_add2_nextjobplan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:maxLength="200"
+                        android:minHeight="40dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_color_normal"
+                    android:textSize="@dimen/text_size_big" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="填报人手机号"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/tv_add3_reportPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_callPhone"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/forget_tel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:minHeight="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_color_normal"
+                    android:textSize="@dimen/text_size_big" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="填报单位"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/tv_add3_reportDept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:maxLength="100"
+                    android:minHeight="40dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:minHeight="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="备    注"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:id="@+id/et_add3_reportNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fm_add_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_report_save"
+            style="@style/MySubmitButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="暂存"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_report_submit"
+            style="@style/MySubmitButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="提交"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_report_audit"
+            style="@style/MySubmitButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="审核"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 字体尺寸 -->
+    <dimen name="text_size_biger">19sp</dimen>
+    <dimen name="text_size_big">17sp</dimen>
+    <dimen name="text_size_normal">15sp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_smaller">11sp</dimen>
+
+    <dimen name="map_btn_width">42dp</dimen>
+    <dimen name="map_btn_icon_width">18dp</dimen>
+
+    <dimen name="map_btn_icon_alpha">0.8</dimen>
+
+</resources>

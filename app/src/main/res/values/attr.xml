@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToolBarView">
+        <attr name="title_text" format="string"/>
+        <attr name="back_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="rightpic_bg" format="reference"/>
+        <attr name="leftpic_bg" format="reference"/>
+        <attr name="midpic_bg" format="reference"/>
+        <attr name="show_leftback" format="boolean"/>
+        <attr name="show_leftpic" format="boolean"/>
+        <attr name="show_rightpic" format="boolean"/>
+        <attr name="show_righttext" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SearchView">
+        <attr name="func_text" format="string"/>
+        <attr name="show_func" format="boolean"/>
+    </declare-styleable>
+</resources>

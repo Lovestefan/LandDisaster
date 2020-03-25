@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightpic_bg="@drawable/toolbar_tel"
+        app:show_rightpic="true"
+        app:show_leftback="false"
+        app:show_leftpic="true"
+        app:title_text="群测群防">
+
+    </com.zx.landdisaster.base.other.ToolBarView>
+
+    <FrameLayout
+        android:id="@+id/fm_othermain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

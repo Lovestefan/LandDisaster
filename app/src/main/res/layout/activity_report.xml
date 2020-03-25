@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/tbv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="上报" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="上报"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/linen" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/ll_auditLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#edecec" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:text="审核"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/linen" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_audit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_contentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="重庆市自然资源安全调度信息系统"
+        android:textColor="@color/text_color_drak"
+        android:textSize="@dimen/text_size_biger"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="[移动端]"
+        android:textColor="@color/text_color_drak"
+        android:textSize="@dimen/text_size_biger"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_login_username"
+            style="@style/MyEditText"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_login_edit"
+            android:drawableLeft="@drawable/login_username"
+            android:drawablePadding="5dp"
+            android:hint="请输入您的用户名"
+            android:maxLength="20"
+            android:paddingLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_username"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_code_login"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_login_code"
+                    style="@style/MyEditText"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_login_edit"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_sendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:text="发送验证码"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_name_login"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_login_pwd"
+                    style="@style/MyEditText"
+                    android:background="@drawable/shape_login_edit"
+                    android:drawableLeft="@drawable/login_password"
+                    android:drawablePadding="5dp"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_login_showpwd"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_login_showpwd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/app_change_showpwd" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_login_userlist"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/et_login_username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="center|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_code_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="10dp"
+            android:text="验证码登录"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_big" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_change_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="10dp"
+            android:text="忘记密码"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_big" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="10dp"
+            android:text="立即注册"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_big" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_do"
+        style="@style/MySubmitButton"
+        android:text="登  录" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="重庆市国土房屋安全应急调度中心"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/tv_login_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本号V1.0.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal" />
+</LinearLayout>

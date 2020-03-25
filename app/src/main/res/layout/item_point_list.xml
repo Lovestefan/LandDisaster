@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_pointList_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/iv_scalelevel"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <TextView
+        android:id="@+id/tv_pointList_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/iv_scalelevel"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_size_small"/>
+
+    <ImageView
+        android:id="@+id/iv_scalelevel"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@id/tv_scalelevel"
+        android:background="@drawable/shape_disaster_type"/>
+
+    <TextView
+        android:id="@+id/tv_scalelevel"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_date"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_small"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="@color/text_color_light"
+        android:textSize="@dimen/text_size_small"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_color"/>
+
+</RelativeLayout>

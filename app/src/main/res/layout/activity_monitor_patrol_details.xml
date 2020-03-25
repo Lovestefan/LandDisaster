@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:show_leftback="true"
+        app:rightpic_bg="@drawable/toolbar_tel"
+        app:show_rightpic="true"
+        app:show_leftpic="true"
+        app:title_text="已上报监测数据" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_monitor_patrol_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollMode="never" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider_color"
+                android:padding="10dp"
+                android:text="图片"
+                android:textSize="@dimen/text_size_small" />
+
+            <FrameLayout
+                android:id="@+id/fm_add_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/splash_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="重庆市自然资源安全调度信息系统"
+        android:textColor="@color/text_color_drak"
+        android:textSize="@dimen/text_size_biger"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="[移动端]"
+        android:textColor="@color/text_color_drak"
+        android:textSize="@dimen/text_size_biger"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重庆市国土房屋安全应急调度中心"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <TextView
+        android:id="@+id/tv_splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本号V1.0.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_normal"/>
+
+</LinearLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="隐患点编号"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_add2_pkiaa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:hint="自动生成，不用填写"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="威胁对象"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_treatObject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:hint="受威胁人、房屋、道路、桥梁"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="威胁人数"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_treatNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="撤离人数"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_leaveNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add2_injuredNum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="受伤人数"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_injureNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add2_dieNum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="死亡人数"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_dieNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add2_missingNum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="失踪人数"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_missingNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_add2_econmicLoss"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="直接/潜在经济损失"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_economicLoss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="诱    因"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_add1_cause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item">
+
+                <com.zx.zxutils.views.ZXSpinner
+                    android:id="@+id/sp_add2_cause"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add2_causeNote"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="备    注"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_causeNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:hint="填写其它诱因"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="已开展处置措施"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add2_dealidea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

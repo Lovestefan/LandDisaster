@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="巡查报告" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/downLayout"
+        android:layout_below="@+id/toolbar_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_pkiaa_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center|left"
+                    android:text="隐患点编号"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:id="@+id/tv_pkiaa"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_hazardType_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center|left"
+                    android:text="@string/add_patrol_jd"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <TextView
+                    android:id="@+id/tv_hazardType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_biger" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_content_name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center|left"
+                android:text="@string/add_patrol_nr"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_biger" />
+
+            <TextView
+                android:id="@+id/tv_patrol_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_margin="10dp"
+                android:background="@drawable/select_report_item"
+                android:gravity="top|left"
+                android:minHeight="120dp"
+                android:padding="5dp"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_biger" />
+
+            <FrameLayout
+                android:id="@+id/fm_add_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

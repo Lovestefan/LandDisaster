@@ -1,0 +1,36 @@
+package com.zx.landdisaster.module.main.bean
+
+/**
+ * Updated by dell on 2019-04-09
+ */
+data class DisasterPointBean(var pkidd: String,
+                             var hazardname: String,
+                             var happentime: String?,
+                             var hazardtype: Int,
+                             var scalelevel: String?,
+                             var longitude: Double,
+                             var latitude: Double,
+                             var disvolume: String,
+                             var threatobject: String,
+                             var threatnum: String,
+                             var leavenum: String,
+                             var dienum: String,
+                             var injuredperson: String,
+                             var missingnum: String,
+                             var economicloss: String,
+                             var cause: String,
+                             var disastertype: String,
+                             var reportnote: String,
+                             var disasternote: String,
+                             var causenote: String,
+                             var reporttime: Long,
+                             var areacode: String,
+                             var address: String,
+                             var isarea: String,
+                             var pkiaa: String,
+                             var reportorname: String,
+                             var reportorphone: String,
+                             var reportdept: String,
+                             var reportdeptDesc: String,
+                             var trialperson: String,
+                             var areaname: String)

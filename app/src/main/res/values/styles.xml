@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MainAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:configChanges">orientation|screenSize|keyboardHidden</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorControlHighlight" tools:ignore="NewApi">#f2f2f2</item>
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="TransTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:configChanges">orientation</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorControlHighlight" tools:ignore="NewApi">#f2f2f2</item>
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="MySubmitButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:background">@drawable/mybutton_shape</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="MyCancelButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/myclosebutton_shape</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="MyPassButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/myclosebutton_shape1</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="MyStopButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/myclosebutton_shape2</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="MyEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:letterSpacing" tools:ignore="NewApi">0.1</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="background">@drawable/shape_login_edit</item>
+    </style>
+    <style name="MyDialogStyleBottom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fm_main_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fm_main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fm_map_search"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp">
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

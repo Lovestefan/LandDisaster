@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="填报人手机号"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_add3_reportPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="填报单位"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_add3_reportDept"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_add3_reportNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:gravity="left"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:maxLength="200"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add3_selectFile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="附件上传"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_add3_selectFile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_report_item"
+                android:drawableLeft="@drawable/report_add_file"
+                android:drawablePadding="5dp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="点击选择附件"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_add3_fileList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

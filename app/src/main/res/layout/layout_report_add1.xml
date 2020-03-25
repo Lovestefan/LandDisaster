@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="灾险情名称"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <EditText
+                    android:id="@+id/et_add1_hazardName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="发生时间"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <TextView
+                    android:id="@+id/tv_add1_happenTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item"
+                    android:drawableRight="@drawable/report_add_calender"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="灾险情类型"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_add1_hazardType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_add1_hazradType1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="灾情"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_add1_hazradType2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="险情"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="是否库区"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_add1_isArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_add1_isAreaYes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:text="是"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_add1_isAreaNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="灾害类型"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_add1_disasterType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item">
+
+                    <com.zx.zxutils.views.ZXSpinner
+                        android:id="@+id/sp_add1_disasterType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="规    模"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_add1_scaleLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item">
+
+                    <com.zx.zxutils.views.ZXSpinner
+                        android:id="@+id/sp_add1_scaleLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="方    量"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_add1_disvolume"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_report_item"
+                        android:gravity="center_vertical"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/text_color_normal"
+                        android:textSize="@dimen/text_size_normal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="立方米"
+                        android:textColor="@color/text_color_light"
+                        android:textSize="@dimen/text_size_normal"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="区    县"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <TextView
+                    android:id="@+id/tv_add1_areacode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="经纬度"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <TextView
+                    android:id="@+id/tv_add1_longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:hint="经度"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <TextView
+                    android:id="@+id/tv_add1_latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:hint="纬度"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <ImageView
+                    android:id="@+id/iv_add1_location"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/report_add_location"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="详细地址"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+
+                <EditText
+                    android:id="@+id/et_add1_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_report_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/text_size_normal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

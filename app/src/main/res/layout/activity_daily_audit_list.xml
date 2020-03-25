@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="日报审核" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_group_defence_adjust_start_time"
+                    android:text="开始时间"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <ImageView
+                    android:id="@+id/iv_close_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_group_defence_time_close"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginStart="30dp"
+                android:background="#666666" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_group_defence_adjust_end_time"
+                    android:text="结束时间"
+                    android:textSize="@dimen/text_size_biger" />
+
+                <ImageView
+                    android:id="@+id/iv_close_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_group_defence_time_close"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="搜索"
+            android:textSize="@dimen/text_size_biger" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <com.zx.zxutils.views.SwipeRecylerView.ZXSwipeRecyler
+        android:id="@+id/sr_daily_audit_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

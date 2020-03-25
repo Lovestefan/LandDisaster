@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zx.landdisaster.base.other.ToolBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="日报修改" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="工作内容编辑"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal" />
+
+            <EditText
+                android:id="@+id/et_daily_content"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/shape_report_additem"
+                android:gravity="left"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_normal" />
+
+            <FrameLayout
+                android:id="@+id/fm_add_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_daily_submit"
+        style="@style/MySubmitButton"
+        android:layout_margin="10dp"
+        android:text="提    交" />
+
+</LinearLayout>

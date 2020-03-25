@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="应上报 / 实际上报"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定量监测上报率："
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_sbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" / "
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_ysb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_big" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宏观巡查上报率："
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_sbl_hgxc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_count_hgxc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" / "
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_ysb_hgxc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_big" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="灾害点："
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_zhd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="监测点："
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_jcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="合法数 / 不合法数"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合法率：&#8195;&#8195;&#8195;&#8195;"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_hfl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hfs"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" / "
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_bhfs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_big" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/linen" />
+</LinearLayout>
