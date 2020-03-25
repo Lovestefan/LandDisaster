@@ -328,8 +328,6 @@ class LoginActivity : BaseActivity<LoginPresenter, LoginModel>(), LoginContract.
         if (list != null)
             UserManager.quanxian = list
 //        handler.postDelayed({
-        //TODO:
-        //跳过权限 直接将进入群测群防角色相关功能
         if (haveQuanXian(Jurisdiction.new_home)) {
             getPermission(arrayOf(Manifest.permission.READ_PHONE_STATE, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION)) {
                 HomeActivity.startAction(this, true)

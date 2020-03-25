@@ -136,8 +136,6 @@ class SplashActivity : BaseActivity<SplashPresenter, SplashModel>(), SplashContr
 
     override fun onCurrentAuthMenuResult(list: List<String>) {
         UserManager.quanxian = list
-        //TODO:
-        //跳过权限 直接将进入群测群防角色相关功能
         if (haveQuanXian(Jurisdiction.new_home)) {
             getPermission(arrayOf(Manifest.permission.READ_PHONE_STATE, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION)) {
                 HomeActivity.startAction(this, false)

@@ -65,8 +65,6 @@ class MainOtherActivity : BaseActivity<MainOtherPresenter, MainOtherModel>(), Ma
         JPushInterface.resumePush(this)
         JPushInterface.setAlias(this, 0, UserManager.getUser().currentUser!!.personid)
         JPushInterface.setTags(this, 0, setOf(if (ApiConfigModule.ISRELEASE) "regular" else "test"))
-        //TODO:
-        UserManager.getUser().personRole.groupDefense = true
         if (UserManager.getUser().personRole.areaManager) {
             toolbar_view.setMidText("片区负责人")
             ZXFragmentUtil.addFragment(supportFragmentManager, AreaManagerFragment.newInstance(), R.id.fm_othermain)
