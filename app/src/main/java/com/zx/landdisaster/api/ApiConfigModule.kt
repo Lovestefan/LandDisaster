@@ -23,7 +23,7 @@ import java.net.URLDecoder
  */
 class ApiConfigModule : ConfigModule {
     companion object {
-        const val ISRELEASE = false//正式发布 用 true，平时内部使用可以用 false，然后自己在正式环境测试环境之间切换，不用频繁打包
+        const val ISRELEASE = true//正式发布 用 true，平时内部使用可以用 false，然后自己在正式环境测试环境之间切换，不用频繁打包
 //                var BASE_IP = if (ISRELEASE) "http://219.153.176.222:4001/" else "http://192.168.11.230:8666/"
 //        var BASE_IP = if (ISRELEASE) "http://183.230.8.9:4001/" else "http://192.168.11.230:8666/"
 
