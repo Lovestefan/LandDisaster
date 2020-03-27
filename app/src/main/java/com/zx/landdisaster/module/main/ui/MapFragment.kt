@@ -165,7 +165,7 @@ class MapFragment : BaseFragment<MapPresenter, MapModel>(), MapContract.View {
                     if (extentString.isNotEmpty()) {
                         onMapExtentResult(extentString, UserManager.getUser().currentUser!!.areaCode!!)
                     } else {
-                        mPresenter.getMapExtent(ApiParamUtil.esriQueryArea(UserManager.getUser().currentUser!!.areaCode!!, UserManager.getUser().currentUser!!.areaName!!), UserManager.getUser().currentUser!!.areaCode!!)
+                        mPresenter.getMapExtent(ApiParamUtil.esriQueryArea(UserManager.getUser().currentUser!!.areaCode!!), UserManager.getUser().currentUser!!.areaCode!!)
                     }
                 }
                 initMap()

@@ -302,7 +302,7 @@ object ApiParamUtil {
     }
 
     //ersi 区域查询
-    fun esriQueryArea(areacode: String, areaName: String): String {
+    fun esriQueryArea(areacode: String): String {
         var featureNum = "0"
         var where = ""
         if (areacode.length == 6) {
